@@ -32,24 +32,26 @@ img {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
+    margin: 0 auto;
+    max-width: 65rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 1000px; */
 }
 
 #site-header {
-    display: float;
+    /* display: float; */
 }
 
-#site-header div {
+#site-header > div {
     text-align: center;
-    padding: 60px 0 120px 0;
+    padding: 70px 0 130px 0;
     font-size: 4em;
-    background-image: url(/Users/jurecki/Documents/week/b52ad1ce-ibeer_starter_files/ibeer_starter_files/img/header-img.jpg);
+    background-image: url("./img/header-img.jpg");
     background-size: cover;
-    width: 1400px;
-    position: relative;
-    left: 150px;
+    max-width: 65rem;
+    /* position: relative; */
+    /* left: 350px; */
     background-position: right bottom;
 }
 
@@ -73,35 +75,51 @@ img {
 #main-navigation {
     display: flex;
     position: relative;
-    left: 150px;
-    flex-direction: row;
-    width: 1400px;
+    /* left: 150px; */
+    justify-content: space-between;
+    /* width: 1400px; */
     background: #444;
 }
 
 #main-navigation a {
-    display: block;
+    /* display: block; */
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
-    margin-right: 40px;
+    /* padding: 10px 20px; */
+    /* margin-right: 40px; */
+}
+
+#main-navigation div {
+    margin: 1rem 3rem;
+}
+
+.nav-links a {
+    margin: 1rem;
 }
 
 #main-navigation #logo {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* margin-right: 400px; */
+}
+
+.content {
     display: flex;
-    justify-content: space-around;
-    margin-right: 400px;
+    max-width: 55rem;
+    margin: auto;
+    position: relative;
+    bottom: 40px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    position: relative;
-    bottom: 40px;
-    width: 780px;
-    left: 250px;
+    padding: 25px;
+    /* position: relative; */
+    /* bottom: 40px; */
+    /* width: 780px; */
+    /* left: 300px; */
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
     /*
@@ -115,11 +133,12 @@ aside {
     display: flex;
     flex-direction: column;
     align-content: center;
-    position: relative;
-    bottom: 1825px;
-    left: 1120px;
-    height: 2000px;
-    width: 300px;
+    width: 1500px;
+    /* position: relative; */
+    /* bottom: 1776px; */
+    /* left: 1120px; */
+    /* height: 2000px; */
+    /* width: 50rem; */
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
@@ -169,13 +188,11 @@ article time {
 }
 
 article img {
-    display: flex;
-    flex-direction: wrap;
+    /* display: flex; */
+    /* flex-direction: wrap; */
     float: right;
-    position: relative;
-    right: 5px;
+    /* position: relative; */
     width: 300px;
-    bottom: 30px;
     /*
         TODO: 
         - Float article images to the right
@@ -183,7 +200,14 @@ article img {
     */
 }
 
-article footer p {
+article footer {
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    color: #666;
+    text-transform: uppercase;
     /*
         TODO: 
         - Style the article footer
@@ -193,6 +217,8 @@ article footer p {
 
 #site-footer {
     background: #333;
+    color: white;
+    text-align: center;
     /*
         TODO: 
         - Style the site footer
